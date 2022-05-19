@@ -12,7 +12,7 @@
     "responses":[""]},
 
     {"tag":"list_todo",
-    "patterns":["show list"], //to-do yu tekrarlamak sesli komutta sorun cikartiyor
+    "patterns":["show list"],
     "responses":[""]},
 
     {"tag":"goodbye",
