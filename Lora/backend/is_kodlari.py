@@ -57,7 +57,7 @@ def create_note():
             with open(filename, 'w') as f:
                 f.write(note)
                 done = True
-                speaker.say("note successfully created {filename}") #filename issuee here
+                speaker.say("note successfully created {}".format(filename)) #filename used with .format()
                 speaker.runAndWait()
 
 
@@ -143,7 +143,7 @@ def search_in_wiki():
 
                 wiki = recognizer.recognize_google(audio)
                 wiki = wiki.lower()
-                results = wikipedia.summary(sentences = 3) #summary() missing 1 required positional argument: 'title'
+                results = wikipedia.summary(wiki, sentences = 3) # wiki used as title
                 done = True
 
                 speaker.say("{wiki} I found in wiki ")
@@ -186,7 +186,9 @@ def open_video_youtube():
             speaker.say("Can not understand")
             speaker.runAndWait()
 
-#exit required here
+        #exit page with pyautogui
+        pyautogui.hotkey('ctrl', 'w') 
+      
 
 def search_google():
 
@@ -269,7 +271,9 @@ def weather_forc():
 
                 city = recognizer.recognize_google(audio)
                 city = city.lower()
-                
+
+                #first letter of the city in capital
+                city = city.capitalize() 
 
                 forcast = mgr.weather_at_place("{city},EU")
                 hava = forcast.weather
