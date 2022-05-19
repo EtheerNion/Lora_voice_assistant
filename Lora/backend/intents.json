@@ -1,0 +1,98 @@
+{"intents":[
+    {"tag":"greeting",
+    "patterns": ["hey", "hi", "hello"],
+    "responses": ["Hello, how can I help you"]},
+
+    {"tag":"create_note",
+    "patterns":["take a note","create a note", "I want to note"],
+    "responses":[""]},
+
+    {"tag":"add_todo",
+    "patterns":["add to do", "to do"],
+    "responses":[""]},
+
+    {"tag":"list_todo",
+    "patterns":["show list"], //to-do yu tekrarlamak sesli komutta sorun cikartiyor
+    "responses":[""]},
+
+    {"tag":"goodbye",
+    "patterns":["bye", "see you"],
+    "responses":[""]},
+
+    {"tag":"what_time",
+    "patterns":["what time is it", "what is the time", "time"],
+    "responses":[""]},
+
+    {"tag":"search_in_wiki",
+    "patterns":["search in wiki","wiki", "wikipedia", "show in wikipedia"],
+    "responses":[""]},
+
+    {"tag":"open_video_youtube",
+    "patterns":["find in youtube", "search in youtube","youtube"],
+    "responses":[""]},
+
+    {"tag":"search_google",
+    "patterns":["google it","search in goodle", "google"],
+    "responses":[""]},
+    
+    {"tag":"open_twitter",
+    "patterns":["start twitter","twitter"],
+    "responses":[""]},
+
+    {"tag":"open_github",
+    "patterns":["open github","github"],
+    "responses":[""]},
+
+    {"tag":"uygulama_ac",
+    "patterns":[""],
+    "responses":[""]},
+
+    {"tag":"day_week",
+    "patterns":["tell me the day","today"],
+    "responses":[""]},
+
+    {"tag":"current_date",
+    "patterns":["today's date","date"],
+    "responses":[""]},
+
+    {"tag":"weather_forc",
+    "patterns":["weather forecast today","weather"],
+    "responses":[""]},
+
+    {"tag":"create_email",
+    "patterns":["write an email","email"],
+    "responses":[""]},
+
+    {"tag":"read_email",
+    "patterns":["read an email"],
+    "responses":[""]},
+
+    {"tag":"open_folder",
+    "patterns":["open folder","folder"],
+    "responses":[""]},
+
+    {"tag":"create_folder",
+    "patterns":["create a folder"],
+    "responses":[""]},
+
+    {"tag":"system_shut_down",
+    "patterns":["shot down"],
+    "responses":[""]},
+
+    {"tag":"create_alarm",
+    "patterns":["set an alarm"],
+    "responses":[""]},
+
+    {"tag":"list_alarms",
+    "patterns":["show alarms"],
+    "responses":[""]},
+
+    {"tag":"antivirus",
+    "patterns":["scan"],
+    "responses":[""]},
+
+    {"tag":"lock_screen",
+    "patterns":["lock screen"],
+    "responses":[""]}
+
+]}
